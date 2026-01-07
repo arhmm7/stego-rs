@@ -46,9 +46,3 @@ cargo run decode output.png decoded.txt
 ## How It Works
 
 The tool uses LSB steganography to hide data by modifying the least significant bit of each RGB color channel. This creates imperceptible changes to the image while storing your secret message.
-
-## Limitations
-
-- Message size limited by image dimensions (3 bits per pixel)
-- Lossy compression (like JPEG re-encoding) will destroy hidden data
-- Save encoded images as PNG to preserve data
