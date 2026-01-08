@@ -15,12 +15,12 @@ cargo build --release
 Hide a text file inside an image:
 
 ```bash
-encrypt encode <text_file> <input_image> <output_image>
+stego encode <text_file> <input_image> <output_image>
 ```
 
 **Example:**
 ```bash
-encrypt encode secret.txt cat.jpg output.png
+stego encode secret.txt cat.jpg output.png
 ```
 
 ### Decode (Extract Message)
@@ -28,10 +28,10 @@ encrypt encode secret.txt cat.jpg output.png
 Extract hidden message from an image:
 
 ```bash
-encrypt decode <stego_image> <output_text>
+stego decode <stego_image> <output_text>
 ```
 
 **Example:**
 ```bash
-encrypt decode output.png decoded.txt
+stego decode output.png decoded.txt
 ```
