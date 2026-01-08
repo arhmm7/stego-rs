@@ -22,12 +22,12 @@ cargo build --release
 Hide a text file inside an image:
 
 ```bash
-cargo run encode <text_file> <input_image> <output_image>
+encrypt encode <text_file> <input_image> <output_image>
 ```
 
 **Example:**
 ```bash
-cargo run encode secret.txt cat.jpg output.png
+encrypt encode secret.txt cat.jpg output.png
 ```
 
 ### Decode (Extract Message)
@@ -35,12 +35,12 @@ cargo run encode secret.txt cat.jpg output.png
 Extract hidden message from an image:
 
 ```bash
-cargo run decode <stego_image> <output_text>
+encrypt decode <stego_image> <output_text>
 ```
 
 **Example:**
 ```bash
-cargo run decode output.png decoded.txt
+encrypt decode output.png decoded.txt
 ```
 
 ## How It Works
