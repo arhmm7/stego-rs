@@ -2,13 +2,6 @@
 
 A command-line steganography tool that hides text files inside images using LSB (Least Significant Bit) encoding.
 
-## Features
-
-- Hide text messages inside existing images
-- Invisible to the human eye
-- Extract hidden messages from images
-- Works with common image formats (PNG, JPG)
-
 ## Installation
 
 ```bash
@@ -42,7 +35,3 @@ encrypt decode <stego_image> <output_text>
 ```bash
 encrypt decode output.png decoded.txt
 ```
-
-## How It Works
-
-The tool uses LSB steganography to hide data by modifying the least significant bit of each RGB color channel. This creates imperceptible changes to the image while storing your secret message.
